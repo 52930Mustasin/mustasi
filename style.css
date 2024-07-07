@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+.container{
+    width: 1170;
+    margin: auto;
+}  
+ul{
+    list-style-type: none;
+}  
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,p{
+    margin: 0;
+}
+nav{
+    background-color: #02918c;
+}
+.row{background-color: #02918c;
+    height: 58px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5;
+
+}
+.logo{
+    color: aliceblue;
+}
+.logo span{
+    color:#cec81d;
+}
+nav .row  {display: flex;
+
+}
+nav .row ul li{
+    display: inline-block;
+    position: relative;
+}
+nav .row ul li a{
+    display: inline-block;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    padding: 10px 30px;
+    position: relative;
+}
+
+nav .row ul li a::after{
+    content: "";
+    position: absolute;
+    width:0%;
+    height: 3px;
+    background-color: #cec81d;
+    top: 45;
+    left: 0;
+    transition: 0.3s;
+}
+nav .row ul li a:hover::after{
+    width: 100%;
+}
+
+
+
+.dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 62;
+    background-color: aqua;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.dropdown_menu .know li{
+    display: block;
+    margin: 10px;
+}
+
+.dropdown_menu .know li a{
+    width: 200;
+    height: 90;
+    top: 10px;
+}
+    
+nav ul .link:hover .dropdown_menu {opacity: 1;
+    transition: 0.5s;
+
+}
+#banner{
+    background-image: url(./new.jpg);
+    height: 725px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+
+.work{
+    display: flex;
+}
+
+#banner .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    height: 1100px;
+    
+    
+    
+}
+
+#banner h4{
+    display: flex;
+    font-size: 30px;
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+    
+}
+#banner h1{
+    font-size: 68;
+    text-transform: uppercase;
+    font-family:"Open Sans", sans-serif ;
+    letter-spacing: 15px;
+}
+    
+
+#banner p{
+    display: flex;
+    font-family:"Open Sans", sans-serif;
+    justify-content: center;
+    padding: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.wrapper a{
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    
+    color: #cec81d ;
+    font-weight: bold;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    overflow: hidden;
+    bottom: 50px;
+} 
+    
+.wrapper a:hover{
+    background-color:#cec81d ;
+    color: black;
+    box-shadow: 0 0 5px #cec81d,
+    0 0 25px #cec81d,
+    0 0 50px #cec81d,
+    0 0 200px #cec81d;
+}
+
+
+
+
+
+
+
+
+
+
